@@ -1,6 +1,6 @@
 base_url = "https://umukodes.netlify.app"
-title = "Mukziez"
-description = "Peer into Mukziez's thoughts"
+title = "Umukodes"
+description = "Peer into Umuks' thoughts"
 
 compile_sass = true
 generate_feed = true

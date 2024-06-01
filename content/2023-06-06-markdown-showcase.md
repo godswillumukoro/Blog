@@ -2,6 +2,7 @@
 title: Markdown Showcase
 description: "This is intended as a quick reference and showcase of Markdown's synthax."
 date: 2023-06-06
+draft: true
 taxonomies:
   tags: [placeholder, markdown, reference]
 ---
@@ -34,8 +35,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ## Text Formatting
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.  
-**Bold**, _Italic_, _**Both**_.  
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+**Bold**, _Italic_, _**Both**_.
 **Bold**, _Italic_, ~~Strikethrough~~, ~~_**ALL OF THEM**_~~.
 
 ## Links
@@ -46,7 +47,7 @@ You can [link](https://example.dom/) to external pages. and other internal [[Mar
 
 ### Simple Example
 
-> This is a blockquote  
+> This is a blockquote
 > with several lines
 
 ### Formatted Example
@@ -105,7 +106,7 @@ Let us use some `inline code` and check out how it `looks`. Here's some `more`.
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l);
+  dateformat.i18n = require("./lang/" + l);
   return true;
 };
 ```
