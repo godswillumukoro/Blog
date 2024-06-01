@@ -18,8 +18,8 @@ highlight_code = true
 timeformat = "%B %e, %Y"                   # e.g. June 14, 2021
 
 [[extra.menu]]
-name = "Archive"
-url = "/"
+name = "About"
+url = "about"
 
 [[extra.menu]]
 name = "Tags"

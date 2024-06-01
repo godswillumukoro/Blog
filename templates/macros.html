@@ -1,15 +1,17 @@
 {% macro page(page) -%}
 <a href="{{ page.permalink | safe }}" class="catalogue-item">
   <section>
-    <time datetime="{{ page.date }}" class="catalogue-time"
-      >{{ page.date | date(format=config.extra.timeformat | default(value="%B
-      %e, %Y")) }}</time
-    >
+    {% if not page.extra.no_date %}
+    <time datetime="{{ page.date }}" class="catalogue-time">
+      {{ page.date | date(format=config.extra.timeformat | default(value="%B %e,
+      %Y")) }}
+    </time>
+    {% endif %}
     <h1 class="catalogue-title">{{ page.title }}</h1>
     <section class="catalogue-line"></section>
     <p>
-      {%- if page.description -%} {{ page.description | safe }} {% else -%} {{
-      page.content | striptags | truncate(length=280) | safe }} {%- endif -%}
+      {% if page.description %} {{ page.description | safe }} {% else %} {{
+      page.content | striptags | truncate(length=280) | safe }} {% endif %}
     </p>
   </section>
 </a>
